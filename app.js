@@ -8,7 +8,6 @@ $(document).ready(function(){
     $('#feedable-a, #findMe-a').removeClass('bold');
     $('#feedable, #findMe').hide();
     $('#gifter').show();
-    $('#img-1').css({'background':'url("images/gifter.png") center no-repeat', 'background-size':'contain'});
   })
 
   $('#findMe-a').click(function(){
@@ -16,7 +15,6 @@ $(document).ready(function(){
     $('#feedable-a, #gifter-a').removeClass('bold');
     $('#feedable, #gifter').hide();
     $('#findMe').show();
-    $('#img-1').css({'background':'url("images/findMe.png") center no-repeat', 'background-size':'contain'});
   })
 
   $('#feedable-a').click(function(){
@@ -24,7 +22,6 @@ $(document).ready(function(){
     $('#findMe-a, #gifter-a').removeClass('bold');
     $('#findMe, #gifter').hide();
     $('#feedable').show();
-    $('#img-1').css({'background':'url("images/feedable.png") center no-repeat', 'background-size':'contain'});
   })
 
 });
