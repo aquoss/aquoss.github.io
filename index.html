@@ -77,13 +77,26 @@
         </div>
         <div class="col s10 offset-s1">
           <p><br><strong>Background</strong></p>
-          <p><i>The scientific side - </i>While developing my background in statistical analysis, I discovered my affinity for coding through data mining. Although interested in the business impact driven by data science applications, my true passion lies in writing the code to make such analyses possible. </p>
+          <p><i>The scientific side - </i>While developing my background in abstract math theory and statistical analysis, I discovered my affinity for coding through data mining. Although interested in the business impact driven by data science applications, my true passion lies in writing the code to make such analyses possible. During my theoretical studies, I discovered my love for puzzling out problems that seem intangibly complex.</p>
           <p><i>The artsy side - </i>I grew up immersed in the world of ballet. From a young age I developed a fascination with the arts, and to this day I find myself drawn to any creative outlet I can get my hands on. </p>
         </div>
       </div>
     </div>
 
-    <div id="divider"></div>
+    <div id="divider">
+      <h1 id="skills-header" class="center">SKILLS</h1>
+      <div class="row">
+          <div class="col l2 offset-l2 m4 offset-m2 s12 skill center">Javascript</div>
+          <div class="col l2 skill m4 s12 center">Node</div>
+          <div class="col l2 skill m4 offset-m2 s12 center">PostgreSQL</div>
+          <div class="col l2 skill m4 s12 center">API Integration</div>
+          <div class="col l2 offset-l2 m4 offset-m2 skill s12 center">Ruby On Rails</div>
+          <div class="col l2 skill m4 s12 center">Express</div>
+          <div class="col l2 skill m4 offset-m2 s12 center">MongoDB</div>
+          <div class="col l2 skill m4 s12 center">Angular</div>
+      </div>
+    </div>
+
     <div class="parallax-container row">
       <a id="work-page"></a>
       <div class="text-container col m9 s10" id="text-three">
@@ -91,28 +104,40 @@
         <div class="col s10 offset-s1">
           <h5><a href="#work-page" id="gifter-a" class="bold">Gifter</a> | <a href="#work-page" id="feedable-a">feedABLE</a> | <a href="#work-page" id="findMe-a">findMe</a></h5>
           <div id="gifter">
-            <p class="col l6 m12">An event scheduling and gift recommendation app built with Ruby on Rails and PostreSQL. Simply create a profile for a recipient, and add important occasions such as birthdays and holidays to the calendar. Two weeks before an event, Gifter will recommend items you can purchase to send their way.</p>
-            <div class="center col l6 m12"><img class="project-img" src="images/gifter.png"></div>
-            <strong>Development Process</strong>
-            <p>I originally created this app to auto-post orders to the Amazon API. After a healthy dose of research, I discovered security issues that caused me to change course. It was, however, great exposure to unfamiliar technologies and project preparation/feasibility. To push my limits on this project, I made a point of customizing my routes and methods. It helped me discover the actual processes behind RoR's built in magic shortcuts. It uses Stripe for payments, and includes a polymorphic relationship. For further development, I want to evolve the gift recommendation method and incorporate text notifications.</p>
-            <strong><a href="https://github.com/aquoss/gifter">Github - </a></strong>
-            <strong><a href="https://app-gifter.herokuapp.com/">Heroku</a></strong>
+            <div class="row">
+              <p class="col l6 m12">An event scheduling and gift recommendation app built with Ruby on Rails and PostreSQL. Simply create a profile for a recipient, and add important occasions such as birthdays and holidays to the calendar. Two weeks before an event, Gifter will recommend items you can purchase to send their way.</p>
+              <div class="center col l6 m12"><img class="project-img" src="images/gifter.png"></div>
+            </div>
+            <div class="col s12">
+              <strong>Development Process</strong>
+              <p>I originally created this app to auto-post orders to the Amazon API. After a healthy dose of research, I discovered security issues that caused me to change course. It was, however, great exposure to unfamiliar technologies and project preparation/feasibility. To push my limits on this project, I made a point of customizing my routes and methods. It helped me discover the actual processes behind RoR's built in magic shortcuts. It uses Stripe for payments, and includes a polymorphic relationship. For further development, I want to evolve the gift recommendation method and incorporate text notifications.</p>
+              <strong><a href="https://github.com/aquoss/gifter">Github - </a></strong>
+              <strong><a href="https://app-gifter.herokuapp.com/">Heroku</a></strong>
+            </div>
           </div>
           <div id="findMe">
-            <p class="col l6 m12">A Ruby on Rails app that similates a game of hide and seek between friends. The "hider" selects a meeting spot, a wager, and a limit on how long the "seeker" has to find him/her. Once the game is accepted, the seeker must follow spacial hints to make it to the hider before the timer runs out. It uses geolocation and the Google Maps API to track the players' positions and deliver real time hints based on the seeker's proximity.</p>
-            <div class="center col l6 m12"><img class="project-img" src="images/findMe.png"></div>
-            <strong>Development Process</strong>
-            <p>To allow for more flexibility, this app utilizes a front-end javascript connection to the Google Maps API rather than the Ruby gem. This way, time intervals are triggered based on a player's movement, and both players' views are simultaneously updated when one makes a decision.</p>
-            <strong><a href="https://github.com/aquoss/Project-2">Github - </a></strong>
-            <strong><a href="https://desolate-ravine-80925.herokuapp.com/">Heroku</a></strong>
+            <div class="row">
+              <p class="col l6 m12">A Ruby on Rails app that similates a game of hide and seek between friends. The "hider" selects a meeting spot, a wager, and a limit on how long the "seeker" has to find him/her. Once the game is accepted, the seeker must follow spacial hints to make it to the hider before the timer runs out. It uses geolocation and the Google Maps API to track the players' positions and deliver real time hints based on the seeker's proximity.</p>
+              <div class="center col l6 m12"><img class="project-img" src="images/findMe.png"></div>
+            </div>
+            <div class="col s12">
+              <strong>Development Process</strong>
+              <p>To allow for more flexibility, this app utilizes a front-end javascript connection to the Google Maps API rather than the Ruby gem. This way, time intervals are triggered based on a player's movement, and both players' views are simultaneously updated when one makes a decision.</p>
+              <strong><a href="https://github.com/aquoss/Project-2">Github - </a></strong>
+              <strong><a href="https://desolate-ravine-80925.herokuapp.com/">Heroku</a></strong>
+            </div>
           </div>
           <div id="feedable">
-            <p class="col l6 m12">A MEAN stack app (in progress) that connects bay area restaurants with soup kitchens to reduce food waste. It uses MongoDB referenced data structures to get and post deliveries, incorporates the Google Maps API, and utilizes Angular services and directives.</p>
-            <div class="center col l6 m12"><img class="project-img" src="images/feedable.png"></div>
-            <strong>Development Process</strong>
-            <p>I collaborated with two UX students to develop the concept for this project. It was fantastic exposure to collaborating with designers and balancing expectations. I really enjoyed their user focused perspective, and I look forward to working with a UXDI influence again.</p>
-            <strong><a href="https://github.com/aquoss/ux-wdi-app">Github - </a></strong>
-            <strong><a href="https://feedable.herokuapp.com/">Heroku</a></strong>
+            <div class="row">
+              <p class="col l6 m12">A MEAN stack app (in progress) that connects bay area restaurants with soup kitchens to reduce food waste. It uses MongoDB referenced data structures to get and post deliveries, incorporates the Google Maps API, and utilizes Angular services and directives.</p>
+              <div class="center col l6 m12"><img class="project-img" src="images/feedable.png"></div>
+            </div>
+            <div class="col s12">
+              <strong>Development Process</strong>
+              <p>I collaborated with two UX students to develop the concept for this project. It was fantastic exposure to collaborating with designers and balancing expectations. I really enjoyed their user focused perspective, and I look forward to working with a UXDI influence again.</p>
+              <strong><a href="https://github.com/aquoss/ux-wdi-app">Github - </a></strong>
+              <strong><a href="https://feedable.herokuapp.com/">Heroku</a></strong>
+            </div>
           </div>
         </div>
       </div>
