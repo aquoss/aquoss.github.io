@@ -36,28 +36,24 @@
   <body>
     <div class="parallax-container row" id="screen-height">
       <a id="homepage"></a>
-    </div>
-    <div class="parallax">
-      <img src="images/city.jpg" class="main-photo">
-      <h1 class="name center">AMBER QUOSS</h1><hr>
-      <div class="nav" id="top-nav">
-        <span class="about"><a href="#about-page">About</a></span>
-        <span class="work"><a href="#work-page">Work</a></span>
-        <span class="contact"><a href="#contact-page">Contact</a></span>
+      <div class="parallax">
+        <img src="images/city.jpg" class="main-photo">
+        <h1 class="name center">AMBER QUOSS</h1><hr>
+        <div class="nav" id="top-nav">
+          <span><a href="#about">About</a></span>
+          <span><a href="#skills">Skills</a></span>
+          <span><a href="#work">Work</a></span>
+          <span><a href="#contact">Contact</a></span>
+        </div>
       </div>
     </div>
 
     <div class="parallax-container row">
-      <div class="parallax col m3 s2" id="pattern-1"></div>
-      <div class="nav hide-on-med-and-down" id="side-nav1">
-        <a href="#homepage">Home</a> /
-        <a href="#work-page">Work</a> /
-        <a href="#contact-page">Contact</a>
-      </div>
-      <div class="col m9 s10 offset-m3 offset-s2" id="text-two">
-        <a id="about-page"></a>
+      <a id="about"></a>
+      <div class="col s12 text-container" id="text-two">
         <h2 class="about-heading">About Me</h2>
-        <p class="col s10 offset-s1"><strong>I'm a full stack web developer with a love for the fusion between art and science, and linking back and front-end technologies.</strong></p>
+        <hr class="thick left">
+        <p class="col l8 offset-l2 m10 offset-m1"><strong>I'm a full stack web developer with a love for the fusion between art and science, and linking back and front-end technologies.</strong></p>
         <div class="col l4 descriptions hide-on-med-and-down">
           <p><span class="right">
           WEB DEVELOPER</span><br>
@@ -72,93 +68,108 @@
           <span class="right">
           INGENUITY BUFF</span></p>
         </div>
-        <div class="col l6 m10 offset-m1">
+        <div class="col l6 m10 s10 offset-m1 offset-s1">
           <p>I'm fascinated by the expansive reach of web development. Whether building a new concept or fine tuning one feature, there's so much creativity and brain power that goes into puzzling out all the moving parts. I like to think of myself as an assorted chocolates risk taker - I love diving into the unknown. I don't cut into each chocolate to check what flavor it is. I pick one up and take a bite. I don't shy away from unfamiliar technologies, I eagerly search for them. I enjoy working with others to tackle complex challenges.</p>
         </div>
-        <div class="col s10 offset-s1">
+        <div class="col l8 offset-l2 s10 offset-s1">
           <p><br><strong>Background</strong></p>
           <p><i>The scientific side - </i>While developing my background in abstract math theory and statistical analysis, I discovered my affinity for coding through data mining. Although interested in the business impact driven by data science applications, my true passion lies in writing the code to make such analyses possible. During my theoretical studies, I discovered my love for puzzling out problems that seem intangibly complex.</p>
           <p><i>The artsy side - </i>I grew up immersed in the world of ballet. From a young age I developed a fascination with the arts, and to this day I find myself drawn to any creative outlet I can get my hands on. </p>
         </div>
+        <hr class="thick right">
       </div>
     </div>
 
     <div id="divider">
+      <a id="skills"></a>
       <h1 id="skills-header" class="center">SKILLS</h1>
       <div class="row">
-          <div class="col l2 offset-l2 m4 offset-m2 s12 skill center">Javascript</div>
-          <div class="col l2 skill m4 s12 center">Node</div>
-          <div class="col l2 skill m4 offset-m2 s12 center">PostgreSQL</div>
-          <div class="col l2 skill m4 s12 center">API Integration</div>
-          <div class="col l2 offset-l2 m4 offset-m2 skill s12 center">Ruby On Rails</div>
-          <div class="col l2 skill m4 s12 center">Express</div>
-          <div class="col l2 skill m4 offset-m2 s12 center">MongoDB</div>
-          <div class="col l2 skill m4 s12 center">Angular</div>
+        <div class="col l10 offset-l1 m8 offset-m2 s12">
+          <p class="skill center col l6 m12 s12"><span class="skill-type">Languages</span><br>Javascript&emsp; Ruby&emsp; HTML5/CSS3</p>
+          <p class="skill center col l6 m12 s12"><span class="skill-type">Databases</span><br>MongoDB&emsp; PostgreSQL</p>
+          <p class="skill center col l6 m12 s12"><span class="skill-type">Frameworks</span><br>Rails&emsp; Node&emsp; Express&emsp; Mongoose&emsp; Angular</p>
+          <p class="skill center col l6 m12 s12"><span class="skill-type">Other</span><br>RESTful API Design & Integration&emsp; jQuery&emsp; Heroku&emsp; CRUD Applications&emsp; Bootstrap&emsp; Materialize</p>
+        </div>
       </div>
     </div>
 
-    <div class="parallax-container row">
-      <a id="work-page"></a>
-      <div class="text-container col m9 s10" id="text-three">
+    <div class="parallax-container row" id="text-three">
+      <a id="work"></a>
+      <div class="text-container s12">
         <h2 class="work-heading">Work</h2>
+        <hr class="thick left">
         <div class="col s10 offset-s1">
-          <h5><a href="#work-page" id="gifter-a" class="bold">Gifter</a> | <a href="#work-page" id="feedable-a">feedABLE</a> | <a href="#work-page" id="findMe-a">findMe</a></h5>
+          <h5><a href="#work" id="gifter-a" class="bold">Gifter</a> | <a href="#work" id="feedable-a">feedABLE</a> | <a href="#work" id="findMe-a">findMe</a></h5>
           <div id="gifter">
             <div class="row">
-              <p class="col l6 m12">An event scheduling and gift recommendation app built with Ruby on Rails and PostreSQL. Simply create a profile for a recipient, and add important occasions such as birthdays and holidays to the calendar. Two weeks before an event, Gifter will recommend items you can purchase to send their way.</p>
-              <div class="center col l6 m12"><img class="project-img" src="images/gifter.png"></div>
+              <p class="col l6 m12">
+                <strong>Front-end</strong>&emsp; Javascript, jQuery, Materialize, Sass<br>
+                <strong>Back-end</strong>&emsp; Ruby on Rails, PostgreSQL, ActiveRecord, Stripe, Devise<br><br>
+                <strong><a href="https://github.com/aquoss/gifter">See the project on Github</a></strong><br>
+                <strong><a href="https://app-gifter.herokuapp.com/">View the live site</a></strong> (email: guest@example.com, password: test123, payment: 4242 4242 4242)<br><br>
+                An event scheduling and gift recommendation app built with Ruby on Rails and PostreSQL. Simply create a profile for a recipient, and add important occasions such as birthdays and holidays to the calendar. Two weeks before an event, Gifter will recommend items you can purchase to send their way.
+              </p>
+              <div class="center col l5 offset-l1 m12"><img class="project-img" src="images/gifter.png"></div>
             </div>
             <div class="col s12">
               <strong>Development Process</strong>
-              <p>I originally created this app to auto-post orders to the Amazon API. After a healthy dose of research, I discovered security issues that caused me to change course. It was, however, great exposure to unfamiliar technologies and project preparation/feasibility. To push my limits on this project, I made a point of customizing my routes and methods. It helped me discover the actual processes behind RoR's built in magic shortcuts. It uses Stripe for payments, and includes a polymorphic relationship. For further development, I want to evolve the gift recommendation method and incorporate text notifications.</p>
-              <strong><a href="https://github.com/aquoss/gifter">Github - </a></strong>
-              <strong><a href="https://app-gifter.herokuapp.com/">Heroku</a></strong>
+              <p>I originally created this app to auto-post orders to the Amazon API. After a healthy dose of research, I discovered security issues that caused me to change course. It was, however, great exposure to unfamiliar technologies and project preparation/feasibility. It uses Stripe for payments, and includes a polymorphic relationship. For further development, I want to evolve the gift recommendation method and incorporate text notifications.</p>
             </div>
           </div>
           <div id="findMe">
             <div class="row">
-              <p class="col l6 m12">A Ruby on Rails app that similates a game of hide and seek between friends. The "hider" selects a meeting spot, a wager, and a limit on how long the "seeker" has to find him/her. Once the game is accepted, the seeker must follow spacial hints to make it to the hider before the timer runs out. It uses geolocation and the Google Maps API to track the players' positions and deliver real time hints based on the seeker's proximity.</p>
-              <div class="center col l6 m12"><img class="project-img" src="images/findMe.png"></div>
+              <p class="col l6 m12">
+                <strong>Front-end</strong>&emsp; Javascript, Google Maps API, Geolocation, jQuery, Materialize<br>
+                <strong>Back-end</strong>&emsp; Ruby on Rails, PostgreSQL, ActiveRecord, bcrypt<br><br>
+                <strong><a href="https://github.com/aquoss/Project-2">See the project on Github</a></strong><br>
+                <strong><a href="https://findme-game.herokuapp.com/">View the live site</a></strong> (email: guest@example.com, password: test123)<br><br>
+                A Ruby on Rails app that similates a game of hide and seek between friends. The "hider" selects a meeting spot, a wager, and a limit on how long the "seeker" has to find him/her. Once the game is accepted, the seeker must follow spacial hints to make it to the hider before the timer runs out. It uses geolocation and the Google Maps API to track the players' positions and deliver real time hints based on the seeker's proximity.
+              </p>
+              <div class="center col l5 offset-l1 m12"><img class="project-img" src="images/findMe.png"></div>
             </div>
             <div class="col s12">
               <strong>Development Process</strong>
-              <p>To allow for more flexibility, this app utilizes a front-end javascript connection to the Google Maps API rather than the Ruby gem. This way, time intervals are triggered based on a player's movement, and both players' views are simultaneously updated when one makes a decision.</p>
-              <strong><a href="https://github.com/aquoss/Project-2">Github - </a></strong>
-              <strong><a href="https://desolate-ravine-80925.herokuapp.com/">Heroku</a></strong>
+              <p>I built this app with two other developers. We spent a large portion of the time pair programming, and utilized each other's strengths to manage responsibilities. I worked on geolocation, updating the back-end through event listeners, and the game timer.</p>
             </div>
           </div>
           <div id="feedable">
             <div class="row">
-              <p class="col l6 m12">A MEAN stack app (in progress) that connects bay area restaurants with soup kitchens to reduce food waste. It uses MongoDB referenced data structures to get and post deliveries, incorporates the Google Maps API, and utilizes Angular services and directives.</p>
-              <div class="center col l6 m12"><img class="project-img" src="images/feedable.png"></div>
+              <p class="col l6 m12">
+                <strong>Front-end</strong>&emsp; Javascript, Angular, Google Maps API, Bootstrap, jQuery<br>
+                <strong>Back-end</strong>&emsp; Node, Express, Mongoose, MongoDB<br><br>
+                <strong><a href="https://github.com/aquoss/ux-wdi-app">See the project on Github</a></strong><br>
+                <strong><a href="https://feedable.herokuapp.com/">View the live site</a></strong> <br><br>
+                A MEAN stack app (in progress) that connects Bay Area restaurants with soup kitchens to reduce food waste. It uses referenced data structures to continuously store delivery data, and RESTful API routes that return JSON. It includes Angular services and directives.
+              </p>
+              <div class="center col l5 offset-l1 m12"><img class="project-img" src="images/feedable.png"></div>
             </div>
             <div class="col s12">
               <strong>Development Process</strong>
               <p>I collaborated with two UX students to develop the concept for this project. It was fantastic exposure to collaborating with designers and balancing expectations. I really enjoyed their user focused perspective, and I look forward to working with a UXDI influence again.</p>
-              <strong><a href="https://github.com/aquoss/ux-wdi-app">Github - </a></strong>
-              <strong><a href="https://feedable.herokuapp.com/">Heroku</a></strong>
             </div>
           </div>
         </div>
       </div>
-      <div class="parallax col m3 s2 offset-m9 offset-s10" id="pattern-2"></div>
-      <div class="nav hide-on-med-and-down" id="side-nav2">
-        <a href="#homepage">Home /</a>
-        <a href="#about-page"> About /</a>
-        <a href="#contact-page"> Contact</a>
+      <hr class="thick right">
+    </div>
+
+    <div class="parallax-container row" id="footer">
+      <a id="contact"></a>
+      <div class="parallax">
+        <img src="images/city.jpg" class="main-photo">
+        <h3 class="center" id="reach-out">Reach out!</h3>
+        <h5 class="center">I would love to hear from you.</h5>
       </div>
     </div>
 
-    <div class="row" id="footer">
-      <a id="contact-page"></a>
-      <h3 class="center">Reach out!</h3>
-      <h5 class="center">I would love to hear from you.</h5>
+    <div class="row" id="links">
       <div class="center">
         <a href="mailto:amberquoss@gmail.com"><img class="contact-image" src="images/mail.png"></img></a>
         <a href="https://www.linkedin.com/in/amberquoss/"><img class="contact-image" src="images/linkedIn.png"></img></a>
-        <a href="https://github.com/aquoss"><img class="contact-image" src="images/github.png"></img></a>
+        <a href="https://github.com/aquoss"><img class="contact-image" id="github" src="images/github.png"></img></a>
       </div>
     </div>
+
 
   </body>
 </html>

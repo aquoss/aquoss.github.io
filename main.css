@@ -1,5 +1,6 @@
 body {
-  background-color: white;
+  background: white;
+  font-size: 16px;
 }
 
 .row {
@@ -23,46 +24,41 @@ hr {
   color: black;
 }
 
-#pattern-1, #pattern-2 {
-  background: #79d4ac;
-  z-index: -1;
-}
-
-#pattern-2 {
-  height: 87vh;
-}
-
 #text-two {
   background: white;
-  margin-bottom: 35px;
+  min-height: 100vh;
+  /*padding-bottom: 50px;*/
 }
 
 #text-three {
-  background: #f7d0bf;
-  height: 100%;
-  padding-bottom: 15vh;
+  /*height: 100%;*/
+  padding-bottom: 5vh;
+  background: white;
 }
 
 #divider {
-  background: #79d4ac;
+  background: rgba(155, 147, 143, 0.7);
 }
 
 #divider .row {
-  padding-bottom: 50px;
+  padding-bottom: 110px;
 }
 
 .skill {
   font-size: 1.5rem;
   font-family: 'Open Sans', sans-serif;
-  color: white;
+  color: #372f2b;
 }
 
 #skills-header {
   font-family: 'Josefin Slab', serif;
-  margin-top: 0;
-  padding-top: 40px;
+  padding-top: 110px;
   font-size: 3.5rem;
-  color: white;
+  color: #50443e;
+}
+
+#links {
+  background: rgba(155, 147, 143, 0.7);
 }
 
 .scroll-container {
@@ -75,32 +71,8 @@ hr {
   padding-top: 2vh;
 }
 
-#side-nav1 {
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.4rem;
-  position: absolute;
-  bottom: 20vh;
-  left: 4vw;
-  color: white;
-}
-
-#side-nav1 a, #side-nav2 a {
-  color: white;
-}
-
 a {
   color: black;
-}
-
-#side-nav2 {
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.4rem;
-  position: absolute;
-  bottom: 50vh;
-  right: 4vw;
-  color: white;
 }
 
 .name {
@@ -110,10 +82,18 @@ a {
   color: #924e5a;
 }
 
+#reach-out {
+  color: #924e5a;
+}
+
 .about-heading, .work-heading {
   font-family: 'Poiret One', cursive;
   font-size: 6em;
   margin: 5vh 0 3vh 5vw;
+}
+
+.work-heading {
+  padding-top: 45px;
 }
 
 .descriptions {
@@ -128,15 +108,14 @@ a {
   z-index: -1;
 }
 
-#stand-out {
-  color: #f9aa98;
+.skill-type {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.3rem;
+  color: #972929;
 }
 
-.footer-photo {
-  max-width: 100%;
-  height: 50vh;
-  object-fit: cover;
-  z-index: -1;
+#stand-out {
+  color: #972929;
 }
 
 .bold {
@@ -156,13 +135,24 @@ a {
   z-index: 0;
 }
 
+#city-divider {
+  height: 60vh;
+}
 
 .text-container {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #footer {
-  height: 35vh;
+  height: 80vh;
+}
+
+.thick {
+  width: 40%;
+  height: 1px;
+  background-color: black;
+  border: none;
+  margin-bottom: 30px;
 }
 
 #footer h3 {
@@ -178,7 +168,7 @@ a {
 .contact-image {
   height: 8vh;
   width: auto;
-  margin: 3vw 1.5vw 0 1.5vw;
+  margin: 2vw 1.5vw 2vw 1.5vw;
 }
 
 .project-img {
