@@ -19,6 +19,7 @@
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="main.css"/>
+    <link rel="icon" href="http://aquoss.github.io/favicon.ico?v=2" />
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -99,7 +100,35 @@
         <h2 class="work-heading">Work</h2>
         <hr class="thick left">
         <div class="col s10 offset-s1">
-          <h5><a href="#work" id="gifter-a" class="bold">Gifter</a> | <a href="#work" id="feedable-a">feedABLE</a> | <a href="#work" id="findMe-a">findMe</a></h5>
+          <h5>
+            <a href="#work" id="stats-a" class="bold">Stats Dashboard</a> |
+            <a href="#work" id="battery-a">Battery API</a> |
+            <a href="#work" id="gifter-a">Gifter</a> |
+            <a href="#work" id="feedable-a">feedABLE</a> |
+            <a href="#work" id="findMe-a">findMe</a>
+          </h5>
+          <div id="stats">
+            <div class="row">
+              <p class="col l6 m12">
+                <strong>Technologies</strong>&emsp; Ruby on Rails, PostgreSQL, Google Charts<br><br>
+                An independently created internal statistics dashboard that visualizes trends in business metrics. This was part of a growth effort to unify the various teams on company initiatives, as well as to create an easy way to monitor the overall impacts of feature changes.<br><br>
+                <strong>Example Metrics</strong><br>
+                <i>Activation Flow</i>&emsp; See the code <strong><a href="https://gist.github.com/aquoss/a320c50a33e9b81f3c85086403c899c9">here</a></strong><br>
+                <i>Shipments by Sales Channel</i>&emsp; See the code <strong><a href="https://gist.github.com/aquoss/d5b473c9ec71ccd538f8bc792be9eb07">here</a></strong>
+              </p>
+              <div class="center col l5 offset-l1 m12"><img class="project-img" src="images/stats-dash.png"></div>
+            </div>
+          </div>
+          <div id="battery">
+            <div class="row">
+              <p class="col l6 m12">
+                <strong>Technologies</strong>&emsp; Ruby on Rails, Rspec<br><br>
+                An api endpoint used to display battery usage in app to all users. I exposed the endpoint and developed the logic to accurately calculate battery drain in a specific time period.<br><br>
+                See the code <strong><a href="https://gist.github.com/aquoss/508fc0aa20bfaa5d3a757685013c42e2">here</a></strong><br><br>
+              </p>
+              <div class="center col l5 offset-l1 m12"><img class="project-img" src="images/battery.png"></div>
+            </div>
+          </div>
           <div id="gifter">
             <div class="row">
               <p class="col l6 m12">

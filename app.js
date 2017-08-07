@@ -1,26 +1,39 @@
 $(document).ready(function(){
   $('.parallax').parallax();
+  var allLinks = '#stats-a, #battery-a, #gifter-a, #findMe-a, #feedable-a';
+  var allWork = '#stats, #battery, #gifter, #findMe, #feedable';
 
-  $('#findMe, #feedable').hide();
+  $(allWork).hide();
+  $('#stats').show();
 
-  $('#gifter-a').click(function(){
+  $('#stats-a').click(function(){
+    $(allLinks).removeClass('bold');
     $(this).addClass('bold');
-    $('#feedable-a, #findMe-a').removeClass('bold');
-    $('#feedable, #findMe').hide();
+    $(allWork).hide();
+    $('#stats').show();
+  })
+  $('#battery-a').click(function(){
+    $(allLinks).removeClass('bold');
+    $(this).addClass('bold');
+    $(allWork).hide();
+    $('#battery').show();
+  })
+  $('#gifter-a').click(function(){
+    $(allLinks).removeClass('bold');
+    $(this).addClass('bold');
+    $(allWork).hide();
     $('#gifter').show();
   })
-
   $('#findMe-a').click(function(){
+    $(allLinks).removeClass('bold');
     $(this).addClass('bold');
-    $('#feedable-a, #gifter-a').removeClass('bold');
-    $('#feedable, #gifter').hide();
+    $(allWork).hide();
     $('#findMe').show();
   })
-
   $('#feedable-a').click(function(){
+    $(allLinks).removeClass('bold');
     $(this).addClass('bold');
-    $('#findMe-a, #gifter-a').removeClass('bold');
-    $('#findMe, #gifter').hide();
+    $(allWork).hide();
     $('#feedable').show();
   })
 
